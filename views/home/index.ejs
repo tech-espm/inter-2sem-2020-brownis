@@ -86,7 +86,8 @@
         }
         h2{
             font-size:40px;
-            margin: 10px 0px 60px 0px;
+            margin: 0px 0px 60px 0px;
+            font-weight: bold;
         }
         h3{
             text-align: center;
@@ -95,13 +96,10 @@
         #secaoA {
             padding: 100px 15px;
         }
-        #secaoB{
-            padding: 100px 15px;
-        }
+       
         #secaoC {
-            padding: 150px 0px 100px;
+            padding: 80px 0px 100px;
 			background-color: white;
-			background-image: url(images/divisao.png);
 			background-position: top left;
 			background-repeat: no-repeat;
 			background-size: 100%;
@@ -111,16 +109,15 @@
 
         footer {
             padding: 150px 0px 100px;
-			background-color: black;
-			background-image: url(images/divisao2.png);
-			background-position: top left;
+			background-image: url(images/fundo3.jpeg);
+			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 100%;
-			color: #999999;
+		
 		}
 
         .vidro {
-            background-color: rgba(255, 0, 0, 0.8);
+            background-color: rgba(255, 0, 0, 0.7);
             color: white;
         }
 
@@ -164,11 +161,42 @@
             background-color: white;
         }
         .fundo1{
-            background-image: url(images/fundomassa2.jpge);
+            height: 100%;
+            min-height: 350px;
+            background-image: url(images/fundomassa2.jpeg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .fundo2{
+            background-color: rgba(245,222,179,0.8);
+        }
+        .fundo3{
+            height: 100%;
+            min-height: 350px;
+            background-image: url(images/fundoM&M2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         .logo{ 
              margin: 170px 0px 0px 1090px;
         }
+       .titulo{
+           color:red;
+           font-weight: bold;
+           margin: 90px 0px 50px 40px;
+       }
+       .paragrafo{
+           color: black;
+           margin: 0px 80px 90px 80px;
+           text-align: justify;
+       }
+       .titulo2{
+           color: black;
+           font-weight: bold;
+           margin: 90px 0px 200px 40px;
+       }
     </style>
 </head>
 <body>
@@ -178,36 +206,42 @@
         <img src="images/logo.svg" alt="logo" height="150px" width="150px" class="logo">
     </header>
 
-    <div data-parallax="scroll" data-image-src="images/fundo1.jpg"></div>
-        <section id="secaoA" class="vidro">
-            <div class="conteudo">
-            
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-6">
-                        <h2 class="margin1">
-                            Como tudo começou...
-                        </h2>
+    <section id="secaoA" class="vidro">
+        <div class="conteudo">
+              <div class="row">
+                     <h2 class="centralizar margin1">
+                          Brownis vendidos até hoje
+                         <br />
+                         <span id="spanVendidos">500</span>
+                     </h2>
+             </div>
+         </div>
+    </section>
+   
+    <div class="container-fluid">
+         <div class="row">
+            <div class="fundo1">
                 
-                        <p>
-                            A culinária sempre foi um dos passatempos o qual sou apaixonada. Aos 18 anos, ao ingressar na faculdade, decidi que iria encontrar uma renda
+            </div>
+        </div>
+        <div class="row fundo2">
+            <h2 class="titulo">
+                Como tudo começou...
+            </h2>
+            <p class="paragrafo"> 
+                A culinária sempre foi um dos passatempos o qual sou apaixonada. Aos 18 anos, ao ingressar na faculdade, decidi que iria encontrar uma renda
                             extra para arcar com meus custos, ao menos os de lazer, sem depender dos meus pais. Fiquei algumas semanas analisando qual seria o produto ideal
                             para atrair meu público alvo, universitários, e que eu poderia fazer com excêlencia. Optei por uma sobremesa de chocolate típica da culinária 
                             dos Estados Unidos, o BROWNIE. Um bolo feito num tabuleiro para bolos e partido em pequenos quadrados, simples e deliciosos. E por fim, acrescentei
                             um toque brasileiro, adicionando diferentes sabores aos meus deliciosos BROWNIS.
-                        </p>
-        
-                        <h2 class="centralizar margin1">
-                            Brownis vendidos até hoje
-                            <br />
-                            <span id="spanVendidos">500</span>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+            </p>
+        </div>
+        <div class="row fundo3">
+                
+        </div>
+     </div>
+   
     <section id="secaoC">
-        <div class="divisoria-brownie"></div>
 
         <div class="conteudo">
 			
@@ -291,12 +325,16 @@
         </div>
 
     </section>
-
+    <div class="container-fluid">
+        <div class="row fundo2">
+            <h2 class="titulo2">
+                Faça sua encomenda
+            </h2>
+        </div>
+    </div>
     <footer>
 		<div class="conteudo">
-			<p>
-				Faça sua encomenda!
-			</p>
+          
 		</div>
     </footer>
 
