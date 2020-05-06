@@ -148,13 +148,13 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-/*.fundo4{
+.fundo4{
 	border-radius: 10px;
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(245, 222, 179, 0.4);
 	width: fit-content;
 	padding: 5px 10px 5px 10px;
 	opacity: 0.5px;
-}*/
+}
 .logo {
 	position: absolute;
 	bottom: 50px;
