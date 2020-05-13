@@ -175,6 +175,14 @@ footer {
 	height: 35px;
 	background-color: rgba(175, 8, 8, 1.0);
 }
+.input-group {
+	margin: 2px 0px;
+	line-height: 20px;
+	height: 20px;
+  }
+  .botao{
+	  margin: 0px 0px 90px 0px;
+  }
 
 @media (max-width: 767px) {
 	h1 {
