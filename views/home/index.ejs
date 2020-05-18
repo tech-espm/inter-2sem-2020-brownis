@@ -86,15 +86,9 @@
                         Como tudo começou...
                     </h2>
                     <p class="paragrafo">
-                        A culinária sempre foi um dos passatempos o qual sou apaixonada. Aos 18 anos, ao ingressar na faculdade,
-                        decidi que iria encontrar uma renda
-                        extra para arcar com meus custos, ao menos os de lazer, sem depender dos meus pais. Fiquei algumas
-                        semanas analisando qual seria o produto ideal
-                        para atrair meu público alvo, universitários, e que eu poderia fazer com excêlencia. Optei por uma
-                        sobremesa de chocolate típica da culinária
-                        dos Estados Unidos, o BROWNIE. Um bolo feito num tabuleiro para bolos e partido em pequenos quadrados,
-                        simples e deliciosos. E por fim, acrescentei
-                        um toque brasileiro, adicionando diferentes sabores aos meus deliciosos BROWNIS.
+                        A culinária sempre foi um dos passatempos o qual sou apaixonada. Aos 18 anos, ao ingressar na faculdade, decidi que iria encontrar uma renda extra para arcar com meus custos, ao menos os de lazer, sem depender dos meus pais. Fiquei algumas semanas analisando
+                        qual seria o produto ideal para atrair meu público alvo, universitários, e que eu poderia fazer com excêlencia. Optei por uma sobremesa de chocolate típica da culinária dos Estados Unidos, o BROWNIE. Um bolo feito num tabuleiro
+                        para bolos e partido em pequenos quadrados, simples e deliciosos. E por fim, acrescentei um toque brasileiro, adicionando diferentes sabores aos meus deliciosos BROWNIS.
                     </p>
                 </div>
             </div>
@@ -110,7 +104,7 @@
                 <div class="row">
 
                     <div class="col-sm-4">
-                        <div class="item grey">
+                        <div class="item ">
                             <h3>Tradicional</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -118,7 +112,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="item white">
+                        <div class="item ">
                             <h3>Tradicional com nozes</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -126,7 +120,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="item red">
+                        <div class="item">
                             <h3>M&M's</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -138,7 +132,7 @@
                 <div class="row">
 
                     <div class="col-sm-4">
-                        <div class="item white">
+                        <div class="item">
                             <h3>Oreo</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -146,7 +140,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="item red">
+                        <div class="item">
                             <h3>Chocolate Branco</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -154,7 +148,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="item white">
+                        <div class="item">
                             <h3>Nutella</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -165,7 +159,7 @@
                 <div class="row">
 
                     <div class="col-sm-4">
-                        <div class="item red">
+                        <div class="item">
                             <h3>Limão</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -173,7 +167,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="item white">
+                        <div class="item">
                             <h3>Bicho de Pé</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -181,7 +175,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="item grey">
+                        <div class="item">
                             <h3>Beijinho</h3>
                             <p class="centralizar">Um texto</p>
                             <div class="frente"></div>
@@ -294,7 +288,6 @@
     <div class="final"></div>
 
     <script type="text/javascript">
-
         var jaComecou = false,
             valorAtual = 0,
             valorMaximo = 500,
@@ -324,8 +317,8 @@
         }
 
         function enviar() {
-			var txtNome = $("#txtNome");
-			var txtEmail = $("#txtEmail");
+            var txtNome = $("#txtNome");
+            var txtEmail = $("#txtEmail");
             var txtCpf = $("#txtCpf");
             var txtTelefone = $("#txtTelefone");
             var txtCep = $("#txtCep");
@@ -337,12 +330,12 @@
             var txtTradicionalNozes = $("#txtTradicionalNozes");
             var txtMeM = $("#txtMeM");
             var txtOreo = $("#txtOreo");
-            var txtNutella= $("#txtNutella");
-            var txtLimao= $("#txtLimao");
-            var txtChocolateBranco= $("#txtChocolateBranco");
-            var txtBichoPe= $("#txtBichoPe");
-            var txtBeijinho= $("#txtBeijinho");
-			var nome = txtNome.val();
+            var txtNutella = $("#txtNutella");
+            var txtLimao = $("#txtLimao");
+            var txtChocolateBranco = $("#txtChocolateBranco");
+            var txtBichoPe = $("#txtBichoPe");
+            var txtBeijinho = $("#txtBeijinho");
+            var nome = txtNome.val();
             var email = txtEmail.val();
             var cpf = txtCpt.val();
             var telefone = txtTelefone.val();
@@ -360,19 +353,18 @@
             var chocolatebranco = txtChocolateBranco.val();
             var bichope = txtBichoPe.val();
             var beijinho = txtBeijinho.val();
-			
-			if (!nome || !emai || !cpf || !telefone || !cep || !bairro || !rua || !numero || !complemento) {
-				alert("Dados incompletos!");
-				return;
-			}
-			
-			
-			
-		}
-		
+
+            if (!nome || !emai || !cpf || !telefone || !cep || !bairro || !rua || !numero || !complemento) {
+                alert("Dados incompletos!");
+                return;
+            }
+
+
+
+        }
+
 
         window.onscroll = validarContador;
-
     </script>
 
 </body>
