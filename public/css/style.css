@@ -108,7 +108,83 @@ footer {
     text-shadow: 8px, 8px, 16px #ffffff;
 }
 
-.frente {
+.frente1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/Tradicional.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente1:hover {
+    opacity: 1;
+}
+
+.frente2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/Oreo.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente2:hover {
+    opacity: 1;
+}
+
+.frente3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/M&Ms.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente3:hover {
+    opacity: 1;
+}
+
+.frente4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/Nozes.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente4:hover {
+    opacity: 1;
+}
+
+.frente5 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -123,7 +199,64 @@ footer {
     transition: opacity ease-in-out 0.3s;
 }
 
-.item:hover .frente {
+.frente5:hover {
+    opacity: 1;
+}
+
+.frente6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/Nutella.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente6:hover {
+    opacity: 1;
+}
+
+.frente7 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/Limao.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente7:hover {
+    opacity: 1;
+}
+
+.frente8 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(/images/BichoDePe.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.frente8:hover {
     opacity: 1;
 }
 
