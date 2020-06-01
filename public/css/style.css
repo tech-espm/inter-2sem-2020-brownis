@@ -290,19 +290,10 @@ footer {
     right: 50px;
 }
 
-.insta {
+.redessociais {
     position: absolute;
-    right: 560px;
-}
-
-.face {
-    position: absolute;
-    right: 640px;
-}
-
-.whats {
-    position: absolute;
-    right: 720px;
+    right: 550px;
+    top: 3968px;
 }
 
 .titulo {
