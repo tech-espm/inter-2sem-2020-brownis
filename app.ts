@@ -19,6 +19,7 @@
 //****************************************************************
 
 import debug = require("debug");
+import dotenv = require("dotenv");
 import express = require("express");
 import cookieParser = require("cookie-parser"); // https://stackoverflow.com/a/16209531/3569421
 import path = require("path");
@@ -28,6 +29,8 @@ import path = require("path");
 import ejs = require("ejs");
 import lru = require("lru-cache");
 import { NextFunction } from "express";
+
+dotenv.config();
 
 ejs.cache = lru(200);
 
@@ -89,6 +92,7 @@ app.use((req: express.Request, res: express.Response, next: NextFunction) => {
 
 // Cadastros simples
 app.use("/", require("./routes/home"));
+app.use("/api/pedido", require("./routes/api/pedido"));
 app.use("/api/tipoLocal", require("./routes/api/tipoLocal"));
 
 // Depois de registrados todos os caminhos das rotas e seus

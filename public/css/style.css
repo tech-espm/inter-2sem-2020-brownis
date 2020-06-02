@@ -64,6 +64,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 
 .vidro {
@@ -288,12 +289,6 @@ footer {
     position: absolute;
     bottom: 50px;
     right: 50px;
-}
-
-.redessociais {
-    position: absolute;
-    right: 550px;
-    top: 3968px;
 }
 
 .titulo {

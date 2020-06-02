@@ -45,12 +45,15 @@
     <title>Brownis</title>
 
     <link href="https://fonts.googleapis.com/css?family=Caveat|Comic+Neue|Indie+Flower&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-1.0.22.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap-1.0.22.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-    <script type="text/javascript" src="lib/jquery/jquery-1.0.0.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
-    <script type="text/javascript" src="lib/parallax/js/parallax-1.5.0.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery/jquery-1.0.0.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap/js/bootstrap-1.0.0.min.js"></script>
+    <script type="text/javascript" src="/lib/parallax/js/parallax-1.5.0.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-mask/js/jquery-mask-1.0.0.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-validate/js/jquery-validate-1.0.0.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-validate/js/messages_pt_BR.min.js"></script>
 </head>
 
 <body>
@@ -190,93 +193,128 @@
     </section>
 
     <section class="fundo2">
-        <div class="conteudo">
+        <form class="conteudo" id="form">
             <div class="container-fluid">
                 <h2 class="titulo">
                     Faça sua encomenda
                 </h2>
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-6">
+                    <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="txtNome">Nome</label>
-                            <input type="text" id="txtNome" class="form-control" />
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="txtEmail">E-mail</label>
-                            <input type="text" id="txtEmail" class="form-control" />
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" />
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="txtCpf">CPF</label>
-                            <input type="text" id="txtCpf" class="form-control" />
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="txtTelefone">Telefone</label>
-                            <input type="text" id="txtTelefone" class="form-control" />
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" class="form-control" />
                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" class="form-control" />
+                </div>
+            </div>
+
+            <hr />
+
+            <h2 class="titulo">
+                Quantidades
+            </h2>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtCep">CEP</label>
-                            <input type="text" id="txtCep" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="txtBairro">Bairro</label>
-                            <input type="text" id="txtBairro" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="txtRua">Rua</label>
-                            <input type="text" id="txtRua" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="txtNumero">Número</label>
-                            <input type="text" id="txtNumero" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="txtComplemento">Complemento</label>
-                            <input type="text" id="txtComplemento" class="form-control" />
+                            <label for="tradicional">Tradicional</label>
+                            <input type="number" value="0" min="0" id="tradicional" name="tradicional" class="form-control" />
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtTradicional">Tradicional</label>
-                            <input type="number" value="0" min="0" id="txtTradicional" class="form-control" />
+                            <label for="nozes">Nozes</label>
+                            <input type="number" value="0" min="0" id="nozes" name="nozes" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtTradicionalNozes">Nozes</label>
-                            <input type="number" value="0" min="0" id="txtTradicionalNozes" class="form-control" />
+                            <label for="mem">M&M's</label>
+                            <input type="number" value="0" min="0" id="mem" name="mem" class="form-control" />
                         </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtMeM">M&M's</label>
-                            <input type="number" value="0" min="0" id="txtMeM" class="form-control" />
+                            <label for="oreo">Oreo</label>
+                            <input type="number" value="0" min="0" id="oreo" name="oreo" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtOreo">Oreo</label>
-                            <input type="number" value="0" min="0" id="txtOreo" class="form-control" />
+                            <label for="branco">Branco</label>
+                            <input type="number" value="0" min="0" id="branco" name="branco" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtChocolateBranco">Branco</label>
-                            <input type="number" value="0" min="0" id="txtChocolateBranco" class="form-control" />
+                            <label for="nutella">Nutella</label>
+                            <input type="number" value="0" min="0" id="nutella" name="nutella" class="form-control" />
                         </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtNutella">Nutella</label>
-                            <input type="number" value="0" min="0" id="txtNutella" class="form-control" />
+                            <label for="limao">Limão</label>
+                            <input type="number" value="0" min="0" id="limao" name="limao" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtLimao">Limão</label>
-                            <input type="number" value="0" min="0" id="txtLimao" class="form-control" />
+                            <label for="bichope">Bicho de pé</label>
+                            <input type="number" value="0" min="0" id="bichope" name="bichope" class="form-control" />
                         </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="txtBichoPe">Bicho de pé</label>
-                            <input type="number" value="0" min="0" id="txtBichoPe" class="form-control" />
+                            <label for="beijinho">Beijinho</label>
+                            <input type="number" value="0" min="0" id="beijinho" name="beijinho" class="form-control" />
                         </div>
-                        <div class="form-group">
-                            <label for="txtBeijinho">Beijinho</label>
-                            <input type="number" value="0" min="0" id="txtBeijinho" class="form-control" />
-                        </div>
+                    </div>
+                </div>
+
+            </div>
+ 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
                         <div class="form-group text-right">
-                            <button class="btn btn-danger btn-lg" type="button" onclick="enviar()">Enviar Pedido</button>
+                            <button class="btn btn-danger btn-lg" type="submit">Enviar Pedido!</button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -291,6 +329,16 @@
     </div>
 
     <script type="text/javascript">
+        var spMaskBehavior = function (val) {
+                return val.replace(/\D/g, '').length === 11 ? "(00) 00000-0000" : "(00) 0000-00009";
+            },
+            spOptions = {
+                onKeyPress: function(val, e, field, options) {
+                    field.mask(spMaskBehavior.apply({}, arguments), options);
+                }
+            };
+        $("#telefone").mask(spMaskBehavior, spOptions);
+
         var jaComecou = false,
             valorAtual = 0,
             valorMaximo = 500,
@@ -319,53 +367,102 @@
             }
         }
 
-        function enviar() {
-            var txtNome = $("#txtNome");
-            var txtEmail = $("#txtEmail");
-            var txtCpf = $("#txtCpf");
-            var txtTelefone = $("#txtTelefone");
-            var txtCep = $("#txtCep");
-            var txtBairro = $("#txtBairro");
-            var txtRua = $("#txtRua");
-            var txtNumero = $("#txtNumero");
-            var txtComplemento = $("#txtComplemento");
-            var txtTradicional = $("#txtTradicional");
-            var txtTradicionalNozes = $("#txtTradicionalNozes");
-            var txtMeM = $("#txtMeM");
-            var txtOreo = $("#txtOreo");
-            var txtNutella = $("#txtNutella");
-            var txtLimao = $("#txtLimao");
-            var txtChocolateBranco = $("#txtChocolateBranco");
-            var txtBichoPe = $("#txtBichoPe");
-            var txtBeijinho = $("#txtBeijinho");
-            var nome = txtNome.val();
-            var email = txtEmail.val();
-            var cpf = txtCpt.val();
-            var telefone = txtTelefone.val();
-            var cep = txtCep.val();
-            var bairro = txtBairro.val();
-            var rua = txtRua.val();
-            var Numero = txtNumero.val();
-            var Complemento = txtComplemento.val();
-            var tradicional = txtTradicional.val();
-            var tradicionalnozes = txtTradicionalNozes.val();
-            var mem = txtMeM.val();
-            var oreo = txtOreo.val();
-            var nutella = txtNutella.val();
-            var limao = txtLimao.val();
-            var chocolatebranco = txtChocolateBranco.val();
-            var bichope = txtBichoPe.val();
-            var beijinho = txtBeijinho.val();
+        $("#form").validate({
+            rules: {
+                nome: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                telefone: {
+                    required: true
+                },
+                bairro: {
+                    required: true
+                },
+                endereco: {
+                    required: true
+                },
+                tradicional: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                nozes: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                mem: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                oreo: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                branco: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                nutella: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                limao: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                bichope: {
+                    required: true,
+                    number: true,
+                    min: 0
+                },
+                beijinho: {
+                    required: true,
+                    number: true,
+                    min: 0
+                }
+            },
+            submitHandler: function (form) {
 
-            if (!nome || !emai || !cpf || !telefone || !cep || !bairro || !rua || !numero || !complemento) {
-                alert("Dados incompletos!");
-                return;
+                if (!parseInt($("#tradicional").val()) &&
+                    !parseInt($("#nozes").val()) &&
+                    !parseInt($("#mem").val()) &&
+                    !parseInt($("#oreo").val()) &&
+                    !parseInt($("#branco").val()) &&
+                    !parseInt($("#nutella").val()) &&
+                    !parseInt($("#limao").val()) &&
+                    !parseInt($("#bichope").val()) &&
+                    !parseInt($("#beijinho").val())) {
+                    alert("Por favor, escolha ao menos um brownie para enviar o pedido 😉");
+                    return;
+                }
+
+                $.ajax({
+                    url: "/api/pedido/enviar",
+                    method: "POST",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data === true) {
+                            alert("Pedido enviado com sucesso! 😍");
+                        } else {
+                            alert("Infelizmente ocorreu um erro ao enviar o pedido. Por favor, tente novamente dentro de alguns instantes... 😢");
+                        }
+                    },
+                    error: function () {
+                        alert("Infelizmente ocorreu um erro ao enviar o pedido. Por favor, tente novamente dentro de alguns instantes... 😢");
+                    }
+                });
             }
-
-
-
-        }
-
+        });
 
         window.onscroll = validarContador;
     </script>
