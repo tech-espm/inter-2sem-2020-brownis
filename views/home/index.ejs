@@ -309,6 +309,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group text-right">
+                            <img id="imgLoader" src="/images/loader.gif" style="display: none;" />
                             <button class="btn btn-danger btn-lg" type="submit">Enviar Pedido!</button>
                         </div>
                     </div>
@@ -432,6 +433,9 @@
                 }
             },
             submitHandler: function (form) {
+                if ($.active) {
+                    return;
+                }
 
                 if (!parseInt($("#tradicional").val()) &&
                     !parseInt($("#nozes").val()) &&
@@ -446,11 +450,15 @@
                     return;
                 }
 
+                $("#imgLoader").show();
+
                 $.ajax({
                     url: "/api/pedido/enviar",
                     method: "POST",
                     data: $(form).serialize(),
                     success: function (data) {
+                        $("#imgLoader").hide();
+
                         if (data === true) {
                             alert("Pedido enviado com sucesso! 😍");
                         } else {
@@ -458,6 +466,8 @@
                         }
                     },
                     error: function () {
+                        $("#imgLoader").hide();
+
                         alert("Infelizmente ocorreu um erro ao enviar o pedido. Por favor, tente novamente dentro de alguns instantes... 😢");
                     }
                 });
