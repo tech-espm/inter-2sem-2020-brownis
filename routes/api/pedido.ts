@@ -13,16 +13,10 @@ router.post("/enviar", wrap(async (req: express.Request, res: express.Response) 
 	//...
 
 	let transporter = nodemailer.createTransport({
-		service: "gmail",
-		host: "smtp.gmail.com",
-		port: 465,
-		secure: "true",
+		service: "Hotmail",
 		auth: {
 			user: process.env.EMAIL,
 			pass: process.env.PASSWORD
-		},
-		tls: {
-			rejectUnauthorized: false
 		}
 	});
 
