@@ -10,6 +10,9 @@ router.post("/enviar", wrap(async (req: express.Request, res: express.Response) 
 	let mensagem = "Novo pedido!\n";
 	mensagem += "Nome: " + req.body.nome + "\n";
 	mensagem += "Email: " + req.body.email + "\n";
+	mensagem += "Telefone: " + req.body.telefone + "\n";
+	mensagem += "Bairro: " + req.body.bairro + "\n";
+	mensagem += "Endereço: " + req.body.endereco + "\n";
 	//...
 
 	let transporter = nodemailer.createTransport({
