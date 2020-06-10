@@ -309,7 +309,11 @@ footer {
 
 .final {
     height: 35px;
-    background-color: rgba(175, 8, 8, 1.0);
+    background-color: rgb(175, 8, 8);
+}
+
+hr {
+    border-color: rgb(175, 8, 8);
 }
 
 .input-group {
@@ -320,6 +324,29 @@ footer {
 
 .botao {
     margin: 0px 0px 90px 0px;
+}
+
+.form-control {
+    border: 1px solid #9E9E9E;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: rgba(217, 83, 79,.75);
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 3px rgba(217, 83, 79,.3);
+    box-shadow: 0 0 0 3px rgba(217, 83, 79,.3);
+}
+
+.modal-body {
+    font-size: 18px;
+    padding: 30px 10px;
+}
+
+.modal-header, .modal-footer {
+    background-color: #efefef;
+    border: 0px;
 }
 
 @media (max-width: 767px) {
