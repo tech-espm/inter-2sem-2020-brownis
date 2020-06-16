@@ -333,10 +333,10 @@ hr {
 }
 
 .form-control:focus {
-    border-color: rgba(217, 83, 79,.75);
+    border-color: rgba(217, 83, 79, .75);
     outline: 0;
-    -webkit-box-shadow: 0 0 0 3px rgba(217, 83, 79,.3);
-    box-shadow: 0 0 0 3px rgba(217, 83, 79,.3);
+    -webkit-box-shadow: 0 0 0 3px rgba(217, 83, 79, .3);
+    box-shadow: 0 0 0 3px rgba(217, 83, 79, .3);
 }
 
 .modal-body {
@@ -344,7 +344,8 @@ hr {
     padding: 30px 10px;
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
     background-color: #efefef;
     border: 0px;
 }
