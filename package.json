@@ -15,7 +15,7 @@
     "debug": "4.1.0",
     "dotenv": "^8.2.0",
     "ejs": "2.6.1",
-    "express": "4.16.4",
+    "express": "4.18.2",
     "express-async-error-wrapper": "^1.0.3",
     "express-ejs-layouts": "2.5.0",
     "leaflet": "^1.4.0",
